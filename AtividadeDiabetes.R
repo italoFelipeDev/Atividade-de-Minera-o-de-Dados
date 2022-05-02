@@ -50,8 +50,7 @@ summary(dados$Education)
 
 summary(dados$Income)
 
-dados$Diabetes_binary <- NULL
-
 dados_novos <-dados[!dados$BMI > 65.0,]
 
 write.csv(dados_novos, file = '/home/italo-basis/Documentos/Universidade/Topicos avançados/atividade-mineracao-de-dados/diabetes_binary_health_indicators_processado.csv')
+

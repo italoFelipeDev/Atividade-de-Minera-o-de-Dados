@@ -1,0 +1,81 @@
+=== Run information ===
+
+Scheme:weka.clusterers.SimpleKMeans -N 2 -A "weka.core.ManhattanDistance -R first-last" -I 700 -S 545
+Relation:     diabetes_binary_health_indicators_processado-weka.filters.unsupervised.instance.Randomize-S42
+Instances:    253030
+Attributes:   22
+              
+              HighBP
+              HighChol
+              CholCheck
+              BMI
+              Smoker
+              Stroke
+              HeartDiseaseorAttack
+              PhysActivity
+              Fruits
+              Veggies
+              HvyAlcoholConsump
+              AnyHealthcare
+              NoDocbcCost
+              GenHlth
+              MentHlth
+              PhysHlth
+              DiffWalk
+              Sex
+              Age
+              Education
+              Income
+Test mode:evaluate on training data
+
+=== Model and evaluation on training set ===
+
+
+kMeans
+======
+
+Number of iterations: 8
+Sum of within cluster distances: 946262.2191140379
+Missing values globally replaced with mean/mode
+
+Cluster centroids:
+                                      Cluster#
+Attribute                Full Data           0           1
+                          (253030)    (104129)    (148901)
+==========================================================
+                          127081.5      125895      127932
+HighBP                           0           1           0
+HighChol                         0           1           0
+CholCheck                        1           1           1
+BMI                             27          28          26
+Smoker                           0           1           0
+Stroke                           0           0           0
+HeartDiseaseorAttack             0           0           0
+PhysActivity                     1           1           1
+Fruits                           1           1           1
+Veggies                          1           1           1
+HvyAlcoholConsump                0           0           0
+AnyHealthcare                    1           1           1
+NoDocbcCost                      0           0           0
+GenHlth                          2           3           2
+MentHlth                         0           0           0
+PhysHlth                         0           0           0
+DiffWalk                         0           0           0
+Sex                              0           0           0
+Age                              8           9           7
+Education                        5           5           5
+Income                           7           6           7
+
+
+
+
+Time taken to build model (full training data) : 15.56 seconds
+
+=== Model and evaluation on training set ===
+
+Clustered Instances
+
+0      104129 ( 41%)
+1      148901 ( 59%)
+
+
